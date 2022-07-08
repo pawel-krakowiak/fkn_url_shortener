@@ -3,5 +3,6 @@ from django.urls import path
 from .views import display_grabber
 
 urlpatterns = [
-    path('shortener/', display_grabber),
+    path('', display_grabber, name='index'),
+    path('create', create, name='create')
 ]
