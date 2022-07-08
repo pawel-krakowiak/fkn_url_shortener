@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import URLGrab
 
-# Create your views here.
+
+def display_grabber(request):
+    return render(request, 'grabber_index.html')
