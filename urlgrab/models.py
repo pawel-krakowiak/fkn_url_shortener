@@ -7,5 +7,5 @@ class URLGrab(models.Model):
     stored_time = models.DateTimeField(auto_now=True, editable=False)
 
     def __str__(self):
-        net_location = urlparse(self.shorted_url).netloc
+        net_location = urlparse(self.direction_url).netloc
         return f"[{self.id}]: {net_location}"
