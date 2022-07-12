@@ -25,19 +25,19 @@ SECRET_KEY = 'django-insecure--hpyacs86*3hu2i(c))xn1+@t@n%l3^q&eqwsdb1ixz7aq@jl+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'urlgrab',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'urlgrab',
 ]
 
 MIDDLEWARE = [
