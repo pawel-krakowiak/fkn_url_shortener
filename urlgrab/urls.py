@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from .views import display_grabber
+from . import views
 
 urlpatterns = [
-    path('', display_grabber, name='index'),
-    path('create', create, name='create')
+    path('', views.display_grabber, name='index'),
+    path('create', views.create, name='create'),
+    path('<str:pk>', views.go, name='go')
 ]
