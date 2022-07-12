@@ -4,5 +4,5 @@ from urlgrab.models import URLGrab
 
 @admin.register(URLGrab)
 class URLGrabAdmin(admin.ModelAdmin):
-    fields = ['shorted_url', 'direction_url']
+    list_display = ['link', 'stored_time', 'uuid']
 
